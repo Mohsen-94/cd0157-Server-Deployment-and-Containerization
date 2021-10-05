@@ -20,11 +20,11 @@ spec:
         app: simple-flask
     spec:
       containers:
-      - name: simple-flask
-        image: IMAGE_TAG
-        securityContext:
-          privileged: false
-          readOnlyRootFilesystem: false
-          allowPrivilegeEscalation: false
-        ports:
-          - containerPort: 8080
+        - name: simple-flask
+          image: mohsen94/simple-flask
+          securityContext:
+            privileged: false
+            readOnlyRootFilesystem: false
+            allowPrivilegeEscalation: false
+          ports:
+            - containerPort: 8080
